@@ -102,9 +102,10 @@ while True:
     if item in shop_list.keys():
         print("Отлично! Продукт куплен!")
         shop_list.pop(item)
-        print("Осталось купить", shop_list)
     else:
         print("Данного продукта нет в списке. Выберете другой!")
     if len(list(shop_list)) == 0:
         break
+    else:
+        print("Осталось купить", shop_list)
 print("Все продукты куплены!")
