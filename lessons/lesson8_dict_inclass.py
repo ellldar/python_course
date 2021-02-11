@@ -94,18 +94,23 @@
 
 # Task 4
 
+# shop_list = { "Хлеб": 2, "Молоко": 3, "Колбаса": 1, "Сметана": 1, "Картошка": 3 }
+# print("Вы пришли в магазин. Вам нужно купить следующие продукты:")
+# print([key for key in shop_list.keys()])
+# while True:
+#     item = input("Какой продукт купили? ").capitalize()
+#     if item in shop_list.keys():
+#         print("Отлично! Продукт куплен!")
+#         shop_list.pop(item)
+#     else:
+#         print("Данного продукта нет в списке. Выберете другой!")
+#     if len(list(shop_list)) == 0:
+#         break
+#     else:
+#         print("Осталось купить", shop_list)
+# print("Все продукты куплены!")
+
 shop_list = { "Хлеб": 2, "Молоко": 3, "Колбаса": 1, "Сметана": 1, "Картошка": 3 }
-print("Вы пришли в магазин. Вам нужно купить следующие продукты:")
-print([key for key in shop_list.keys()])
-while True:
-    item = input("Какой продукт купили? ").capitalize()
-    if item in shop_list.keys():
-        print("Отлично! Продукт куплен!")
-        shop_list.pop(item)
-    else:
-        print("Данного продукта нет в списке. Выберете другой!")
-    if len(list(shop_list)) == 0:
-        break
-    else:
-        print("Осталось купить", shop_list)
-print("Все продукты куплены!")
+for key, value in shop_list.items():
+    shop_list[key] = value * 5
+print(shop_list)
