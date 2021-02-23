@@ -1,0 +1,6 @@
+hello, world
+what an amazing day
+just making some shit up
+testing how to read from a file
+python
+i love Kyrgyzstan
